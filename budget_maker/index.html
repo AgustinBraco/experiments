@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./styles.css" />
-		<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+		<link rel="shortcut icon" href="/public/favicon.ico" type="image/x-icon" />
 		<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 		<link
 			rel="shortcut icon"
@@ -14,36 +14,41 @@
 		<title>Budget Maker</title>
 	</head>
 	<body>
-		<!-- Switch Cheap -->
-		<div class="switch-body">
-			<h2 class="switch-text">CHEAP</h2>
-			<div class="toggle-button cheap">
-				<div class="icon">
-					<i class="bx bxs-offer"></i>
+		<a class="backWrapper" href="../">
+			<div class="backArrow"></div>
+		</a>
+
+		<div class="switchesContainer">
+			<!-- Switch Cheap -->
+			<div class="switchWrapper">
+				<h2 class="switchText">CHEAP</h2>
+				<div class="switchButton cheap">
+					<div class="switchIcon">
+						<i class="bx bxs-offer"></i>
+					</div>
+				</div>
+			</div>
+
+			<!-- Switch Fast -->
+			<div class="switchWrapper">
+				<h2 class="switchText">FAST</h2>
+				<div class="switchButton fast">
+					<div class="switchIcon">
+						<i class="bx bxs-timer"></i>
+					</div>
+				</div>
+			</div>
+
+			<!-- Switch Nice -->
+			<div class="switchWrapper">
+				<h2 class="switchText">NICE</h2>
+				<div class="switchButton nice">
+					<div class="switchIcon">
+						<i class="bx bxl-sketch"></i>
+					</div>
 				</div>
 			</div>
 		</div>
-
-		<!-- Switch Fast -->
-		<div class="switch-body">
-			<h2 class="switch-text">FAST</h2>
-			<div class="toggle-button fast">
-				<div class="icon">
-					<i class="bx bxs-timer"></i>
-				</div>
-			</div>
-		</div>
-
-		<!-- Switch Nice -->
-		<div class="switch-body">
-			<h2 class="switch-text">NICE</h2>
-			<div class="toggle-button nice">
-				<div class="icon">
-					<i class="bx bxl-sketch"></i>
-				</div>
-			</div>
-		</div>
-
 		<script src="./scripts.js"></script>
 	</body>
 </html>

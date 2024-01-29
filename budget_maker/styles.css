@@ -1,26 +1,16 @@
-/* Google font */
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@1,900&display=swap');
+@import url('../styles.css');
 
-/* Root */
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
-body {
+.switchesContainer {
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: center;
 	align-items: center;
 	height: 100dvh;
-	border: dashed 2px #000000;
-	background-color: #ffffff;
-	font-family: 'Red Hat Display', sans-serif;
+	background-color: var(--color-background);
 }
 
 /* Switches */
-.switch-body {
+.switchWrapper {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -29,34 +19,34 @@ body {
 	gap: 60px;
 }
 
-.switch-text {
+.switchText {
 	font-size: 60px;
-	font-style: italic;
-	font-weight: bold;
 	letter-spacing: 10px;
+	width: 300px;
+	text-align: end;
 }
 
-.toggle-button {
+.switchButton {
 	position: relative;
-	height: 80px;
+	height: 100px;
 	width: 250px;
-	background-color: #ddd;
+	background-color: var(--color-grey);
 	border-radius: 100px;
 	cursor: pointer;
 	transition: all ease 0.5s;
 }
 
-.toggle-button .icon {
+.switchButton .switchIcon {
 	position: absolute;
 	height: 100px;
 	width: 100px;
 	font-size: 55px;
 	top: 50%;
-	left: 20px;
+	left: 0px;
 	cursor: pointer;
-	color: #999999;
+	color: var(--color-grey);
 	transform: translateY(-50%);
-	background-color: #ffffff;
+	background-color: var(--color-white);
 	border-radius: 50%;
 	display: flex;
 	align-items: center;
@@ -65,15 +55,15 @@ body {
 	transition: all ease 0.5s;
 }
 
-.toggle-button.active .icon {
-	left: calc(100% - 100px - 20px);
+.switchButton.active .switchIcon {
+	left: calc(100% - 100px - 0px);
 }
 
 /* Cheap */
 .cheap.active {
 	background: #cacf85;
 }
-.cheap.active .icon {
+.cheap.active .switchIcon {
 	color: #cacf85;
 }
 
@@ -81,7 +71,7 @@ body {
 .fast.active {
 	background: #8cba80;
 }
-.fast.active .icon {
+.fast.active .switchIcon {
 	color: #8cba80;
 }
 
@@ -89,35 +79,35 @@ body {
 .nice.active {
 	background: #658e9c;
 }
-.nice.active .icon {
+.nice.active .switchIcon {
 	color: #658e9c;
 }
 
 /* Media query */
 @media (max-width: 700px) and (max-height: 900px) {
-	.switch-body {
+	.switchWrapper {
 		height: 200px;
 		gap: 30px;
 	}
 
-	.switch-text {
+	.switchText {
 		font-size: 35px;
 		letter-spacing: 2px;
 	}
 
-	.toggle-button {
+	.switchButton {
 		height: 60px;
 		width: 165px;
 	}
 
-	.toggle-button .icon {
+	.switchButton .switchIcon {
 		height: 70px;
 		width: 70px;
 		font-size: 40px;
 		left: 10px;
 	}
 
-	.toggle-button.active .icon {
+	.switchButton.active .switchIcon {
 		left: calc(100% - 70px - 10px);
 	}
 }

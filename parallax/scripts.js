@@ -1,6 +1,6 @@
 // Select elements
 const fullHeight = document.body.scrollHeight - window.innerHeight;
-const timeline = document.querySelector('.timeline');
+const line = document.querySelector('.parallaxLine');
 const texts = [
 	document.querySelector('.firstText'),
 	document.querySelector('.secondText'),
@@ -18,7 +18,7 @@ const textsPoints = [300, 600, 950, 1300, 1700, 2000, 2400, 2710];
 window.addEventListener('scroll', () => {
 	let scroll = window.scrollY;
 	const progress = (scroll / fullHeight) * 100;
-	timeline.style.width = `${progress}vw`;
+	line.style.width = `${progress}vw`;
 
 	for (let i = 0; i < textsPoints.length; i++) {
 		if (scroll >= textsPoints[i]) texts[i].style.display = 'flex';
