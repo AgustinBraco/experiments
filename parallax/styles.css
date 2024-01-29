@@ -1,0 +1,109 @@
+@font-face {
+	font-family: CalSans;
+	src: url('./assets/font/CalSans-SemiBold.woff2') format('woff2'),
+		url('./assets/font/CalSans-SemiBold.woff') format('woff'),
+		url('./assets/font/CalSans-SemiBold.ttf') format('ttf');
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+	width: 0px;
+}
+
+body {
+	height: 4000px;
+	background-color: #f6f6f6;
+	font-family: CalSans, sans-serif;
+}
+
+.container {
+	position: sticky;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.timeline {
+	position: absolute;
+	top: 50%;
+	left: 0%;
+	width: 0vw;
+	border: solid 3px #242422;
+	z-index: 999;
+}
+
+.circles {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 120px;
+	height: 100vh;
+}
+
+.circles > *:nth-child(n) {
+	width: 100px;
+	height: 100px;
+	z-index: 999999;
+	background-size: contain;
+	background-color: #f6f6f6;
+	position: relative;
+}
+
+.first {
+	background: url('./assets/images/first.png');
+}
+
+.second {
+	background: url('./assets/images/second.png');
+}
+
+.third {
+	background: url('./assets/images/third.png');
+}
+
+.fourth {
+	background: url('./assets/images/fourth.png');
+}
+
+.fifth {
+	background: url('./assets/images/fifth.png');
+}
+
+.sixth {
+	background: url('./assets/images/sixth.png');
+}
+
+.seventh {
+	background: url('./assets/images/seventh.png');
+}
+
+.eighth {
+	background: url('./assets/images/eighth.png');
+}
+
+.text {
+	display: none;
+	font-size: 24px;
+	font-weight: bold;
+	position: absolute;
+	top: -50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	animation: appear 0.5s ease forwards;
+}
+
+@keyframes appear {
+	0% {
+		opacity: 0;
+		translate: 0px 55px;
+	}
+	100% {
+		opacity: 1;
+	}
+}

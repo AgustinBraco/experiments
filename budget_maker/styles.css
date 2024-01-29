@@ -1,0 +1,123 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@1,900&display=swap');
+
+/* Root */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	height: 100dvh;
+	border: dashed 2px #000000;
+	background-color: #ffffff;
+	font-family: 'Red Hat Display', sans-serif;
+}
+
+/* Switches */
+.switch-body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 250px;
+	width: 90%;
+	gap: 60px;
+}
+
+.switch-text {
+	font-size: 60px;
+	font-style: italic;
+	font-weight: bold;
+	letter-spacing: 10px;
+}
+
+.toggle-button {
+	position: relative;
+	height: 80px;
+	width: 250px;
+	background-color: #ddd;
+	border-radius: 100px;
+	cursor: pointer;
+	transition: all ease 0.5s;
+}
+
+.toggle-button .icon {
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	font-size: 55px;
+	top: 50%;
+	left: 20px;
+	cursor: pointer;
+	color: #999999;
+	transform: translateY(-50%);
+	background-color: #ffffff;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+	transition: all ease 0.5s;
+}
+
+.toggle-button.active .icon {
+	left: calc(100% - 100px - 20px);
+}
+
+/* Cheap */
+.cheap.active {
+	background: #cacf85;
+}
+.cheap.active .icon {
+	color: #cacf85;
+}
+
+/* Fast */
+.fast.active {
+	background: #8cba80;
+}
+.fast.active .icon {
+	color: #8cba80;
+}
+
+/* Nice */
+.nice.active {
+	background: #658e9c;
+}
+.nice.active .icon {
+	color: #658e9c;
+}
+
+/* Media query */
+@media (max-width: 700px) and (max-height: 900px) {
+	.switch-body {
+		height: 200px;
+		gap: 30px;
+	}
+
+	.switch-text {
+		font-size: 35px;
+		letter-spacing: 2px;
+	}
+
+	.toggle-button {
+		height: 60px;
+		width: 165px;
+	}
+
+	.toggle-button .icon {
+		height: 70px;
+		width: 70px;
+		font-size: 40px;
+		left: 10px;
+	}
+
+	.toggle-button.active .icon {
+		left: calc(100% - 70px - 10px);
+	}
+}
