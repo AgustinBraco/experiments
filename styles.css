@@ -1,9 +1,9 @@
 /* Global */
 @font-face {
 	font-family: CalSans;
-	src: url('/public/font/CalSans-SemiBold.woff2') format('woff2'),
-		url('/public/font/CalSans-SemiBold.woff') format('woff'),
-		url('/public/font/CalSans-SemiBold.ttf') format('ttf');
+	src: url('./public/font/CalSans-SemiBold.woff2') format('woff2'),
+		url('./public/font/CalSans-SemiBold.woff') format('woff'),
+		url('./public/font/CalSans-SemiBold.ttf') format('ttf');
 }
 
 :root {
@@ -40,7 +40,7 @@
 }
 
 .backArrow {
-	background-image: url('/public/images/goback.png');
+	background-image: url('./public/images/goback.png');
 	background-size: cover;
 	width: 50px;
 	height: 50px;
@@ -71,7 +71,7 @@
 }
 
 .indexIcon {
-	background-image: url('/public/images/link.png');
+	background-image: url('./public/images/link.png');
 	background-size: contain;
 	width: 25px;
 	height: 25px;

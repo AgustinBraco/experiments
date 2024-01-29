@@ -41,35 +41,35 @@
 }
 
 .firstCircle {
-	background: url('/public/images/first.png');
+	background: url('../public/images/first.png');
 }
 
 .secondCircle {
-	background: url('/public/images/second.png');
+	background: url('../public/images/second.png');
 }
 
 .thirdCircle {
-	background: url('/public/images/third.png');
+	background: url('../public/images/third.png');
 }
 
 .fourthCircle {
-	background: url('/public/images/fourth.png');
+	background: url('../public/images/fourth.png');
 }
 
 .fifthCircle {
-	background: url('/public/images/fifth.png');
+	background: url('../public/images/fifth.png');
 }
 
 .sixthCircle {
-	background: url('/public/images/sixth.png');
+	background: url('../public/images/sixth.png');
 }
 
 .seventhCircle {
-	background: url('/public/images/seventh.png');
+	background: url('../public/images/seventh.png');
 }
 
 .eighthCircle {
-	background: url('/public/images/eighth.png');
+	background: url('../public/images/eighth.png');
 }
 
 .parallaxText {
