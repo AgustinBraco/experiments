@@ -1,7 +1,9 @@
+// Hide index.html from path
+window.history.replaceState({}, '', '*');
+
+// Select elements
 const fullHeight = document.body.scrollHeight - window.innerHeight;
-
 const timeline = document.querySelector('.timeline');
-
 const texts = [
 	document.querySelector('.firstText'),
 	document.querySelector('.secondText'),
@@ -15,6 +17,7 @@ const texts = [
 
 const textsPoints = [300, 600, 950, 1300, 1700, 2000, 2400, 2710];
 
+// Scroll listener
 window.addEventListener('scroll', () => {
 	let scroll = window.scrollY;
 	const progress = (scroll / fullHeight) * 100;

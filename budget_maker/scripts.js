@@ -1,3 +1,6 @@
+// Hide index.html from path
+window.history.replaceState({}, '', '*');
+
 // Get switches:
 const cheap = document.querySelector('.cheap');
 const fast = document.querySelector('.fast');
