@@ -1,6 +1,3 @@
-// Hide index.html from path
-window.history.replaceState({}, '', '*');
-
 // Select elements
 const fullHeight = document.body.scrollHeight - window.innerHeight;
 const timeline = document.querySelector('.timeline');
