@@ -1,0 +1,55 @@
+@import url('../styles.css');
+
+.twwContainer {
+	width: 100vw;
+	background-color: var(--color-background);
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+.twwWrapper {
+	width: 40%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: start;
+	align-items: center;
+	position: absolute;
+	top: 150px;
+  padding-bottom: 50px;
+	gap: 100px;
+}
+
+.twwInputWrapper {
+	background-color: var(--color-grey);
+	box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.2);
+	width: 50%;
+	height: 100px;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.twwLabel {
+	position: absolute;
+	top: -25%;
+	left: 1%;
+	font-size: 18px;
+	color: var(--color-font);
+}
+
+.twwInput {
+	width: 80%;
+	height: 40px;
+	border: dashed 1px var(--color-background);
+	border-radius: 6px;
+	outline: dashed 2px var(--color-background);
+	font-size: 20px;
+	padding-left: 10px;
+}
+
+.twwInput:focus {
+	outline: dashed 1px var(--color-font);
+}
