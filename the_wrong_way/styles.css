@@ -6,6 +6,16 @@ html, body {
 	height: 100%;
 }
 
+.soonContainer {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 4rem;
+	color: rgb(174, 174, 174);
+}
+
+/* 
 .twwContainer {
 	width: 100vw;
 	height: 100%;
@@ -60,4 +70,4 @@ html, body {
 
 .twwInput:focus {
 	outline: dashed 1px var(--color-font);
-}
+} */
