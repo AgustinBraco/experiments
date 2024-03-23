@@ -36,8 +36,8 @@
 	height: 80px;
 	border: dashed 2px black;
 	border-radius: 50%;
-	cursor: pointer;
 	z-index: 999999999;
+	cursor: url('../public/pointer.png'), pointer;
 }
 
 .backArrow {
@@ -55,6 +55,9 @@
 	align-items: center;
 	width: 100vw;
 	height: 100vh;
+	cursor: url('./public/cursor.png'), auto;
+	transition: cursor 3s ease-in-out;
+	transition-delay: 1s;
 }
 
 .indexWrapper {
@@ -64,6 +67,7 @@
 }
 
 .indexLink {
+	cursor: url('./public/pointer.png'), pointer;
 	font-size: 35px;
 	text-decoration: none;
 	color: var(--color-font);

@@ -1,5 +1,9 @@
 @import url('../styles.css');
 
+body {
+	cursor: url('../public/cursor.png'), pointer;
+}
+
 .parallaxContainer {
 	height: 4000px;
 	background-color: var(--color-background);
