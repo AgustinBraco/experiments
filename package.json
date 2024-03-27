@@ -1,0 +1,23 @@
+{
+	"name": "experiments",
+	"description": "Este repositorio contiene pequeños desarrollos web <br> hechos con HTML, CSS, JavaScript y GSAP con el fin <br> de agrupar distintos experimentos en un mismo repositorio.",
+	"version": "1.0.0",
+	"type": "module",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/AgustinBraco/experiments.git"
+	},
+	"author": "Agustin Braco",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/AgustinBraco/experiments/issues"
+	},
+	"homepage": "https://github.com/AgustinBraco/experiments#readme",
+	"dependencies": {
+		"sweetalert2": "^11.10.7"
+	}
+}

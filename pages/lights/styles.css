@@ -1,0 +1,71 @@
+body {
+	cursor: url('../../public/cursor.png'), pointer;
+}
+
+.container {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+	gap: 70px;
+}
+
+.key {
+	cursor: url('../../public/pointer.png'), auto;
+	background-image: url('../../public/images/lights/luz_alta.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	width: 200px;
+	height: 200px;
+	transition: all linear 0.25s;
+}
+
+.key.off {
+	background-image: url('../../public/images/lights/luz_baja.png');
+	transition: all linear 0.25s;
+}
+
+.lightsWrapper {
+	display: flex;
+	gap: 100px;
+}
+
+.light {
+	cursor: url('../../public/pointer.png'), auto;
+	background-image: url('../../public/images/lights/prendido.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	width: 150px;
+	height: 150px;
+	transition: all linear 0.25s;
+}
+
+.bathLight.off {
+	background-image: url('../../public/images/lights/apagado.png');
+	transition: all linear 0.25s;
+}
+
+.bedLight.off {
+	background-image: url('../../public/images/lights/apagado.png');
+	transition: all linear 0.25s;
+}
+
+.kitchenLight.off {
+	background-image: url('../../public/images/lights/apagado.png');
+	transition: all linear 0.25s;
+}
+
+.livingLight.off {
+	background-image: url('../../public/images/lights/apagado.png');
+	transition: all linear 0.25s;
+}
+
+.button {
+	position: absolute;
+	cursor: url('../../public/pointer.png'), auto;
+	visibility: hidden;
+}

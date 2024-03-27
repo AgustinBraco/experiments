@@ -1,5 +1,5 @@
 # Experimentos
-Este repositorio contiene pequeños desarrollos web <br> hechos con HTML, CSS y JavaScript vanilla, con el fin <br> de agrupar distintos experimentos en un mismo repositorio.
+Este repositorio contiene pequeños desarrollos web <br> hechos con HTML, CSS, JavaScript y GSAP con el fin <br> de agrupar distintos experimentos en un mismo repositorio.
 
 ## Tecnologías
 <div>
