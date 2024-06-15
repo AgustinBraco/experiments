@@ -1,0 +1,23 @@
+#Back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2.5rem;
+  width: 5rem;
+  height: 5rem;
+  background-color: $grey;
+  border-radius: 50%;
+  cursor: $pointer, pointer;
+
+  &::after {
+    content: '';
+    background-image: url('/assets/arrow.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 2rem;
+    height: 2rem;
+  }
+}

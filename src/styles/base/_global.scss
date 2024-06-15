@@ -1,0 +1,39 @@
+// Font
+@font-face {
+  font-family: CalSans;
+  src: url('../public/font/calsans.woff2') format('woff2'),
+    url('../public/font/calsans.woff') format('woff'),
+    url('../public/font/calsans.ttf') format('ttf');
+}
+
+/* Colors */
+$background: #f6f6f6;
+$font: #242422;
+$grey: #dcdcdc;
+$white: #ffffff;
+$black: #000000;
+
+// Cursors
+$cursor: url('/assets/cursor.png');
+$pointer: url('/assets/pointer.png');
+
+// Reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  &::selection {
+    background: $grey;
+    color: $font;
+  }
+}
+
+// Global
+html {
+  font-size: 62.5%; // 1rem = 10px
+  font-family: CalSans, sans-serif;
+  scrollbar-width: none;
+  overflow-x: hidden;
+  cursor: $cursor, pointer;
+}

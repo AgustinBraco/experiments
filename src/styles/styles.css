@@ -1,0 +1,207 @@
+@font-face {
+  font-family: CalSans;
+  src: url("../public/font/calsans.woff2") format("woff2"), url("../public/font/calsans.woff") format("woff"), url("../public/font/calsans.ttf") format("ttf");
+}
+/* Colors */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::selection {
+  background: #dcdcdc;
+  color: #242422;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: CalSans, sans-serif;
+  scrollbar-width: none;
+  overflow-x: hidden;
+  cursor: url("/assets/cursor.png"), pointer;
+}
+
+#Back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2.5rem;
+  width: 5rem;
+  height: 5rem;
+  background-color: #dcdcdc;
+  border-radius: 50%;
+  cursor: url("/assets/pointer.png"), pointer;
+}
+#Back::after {
+  content: "";
+  background-image: url("/assets/arrow.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 2rem;
+  height: 2rem;
+}
+
+#Switch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10rem;
+  gap: 5rem;
+}
+#Switch .SwitchTitle {
+  font-size: 2.6rem;
+  width: 8rem;
+  text-align: start;
+  color: #242422;
+  letter-spacing: 0.1rem;
+}
+#Switch .SwitchButton {
+  height: 6rem;
+  width: 13rem;
+  background-color: #dcdcdc;
+  border-radius: 5rem;
+  position: relative;
+  transition: all ease 0.5s;
+  cursor: url("/assets/pointer.png"), pointer;
+}
+#Switch .SwitchButton .SwitchIcon {
+  position: absolute;
+  height: 6rem;
+  width: 6rem;
+  font-size: 3.5rem;
+  top: 50%;
+  left: 0rem;
+  color: #dcdcdc;
+  transform: translateY(-50%);
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.1);
+  transition: all ease 0.5s;
+}
+#Switch .SwitchButton.active .SwitchIcon {
+  left: calc(100% - 6rem - 0rem);
+}
+#Switch .Cheap.active {
+  background: #cacf85;
+}
+#Switch .Cheap.active .SwitchIcon {
+  color: #cacf85;
+}
+#Switch .Fast.active {
+  background: #8cba80;
+}
+#Switch .Fast.active .SwitchIcon {
+  color: #8cba80;
+}
+#Switch .Nice.active {
+  background: #658e9c;
+}
+#Switch .Nice.active .SwitchIcon {
+  color: #658e9c;
+}
+
+#Home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #f6f6f6;
+}
+#Home .HomeLinks {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 3rem;
+  background-color: rgba(220, 220, 220, 0.4);
+  padding: 3.5rem;
+  border-radius: 2rem;
+}
+@media screen and (min-width: 700px) {
+  #Home .HomeLinks {
+    padding: 4rem;
+    gap: 5rem;
+  }
+}
+@media screen and (min-width: 1030px) {
+  #Home .HomeLinks {
+    padding: 4rem;
+    gap: 4rem;
+  }
+}
+#Home .HomeLinks .HomeLink {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 2.1rem;
+  text-decoration: none;
+  color: #242422;
+  letter-spacing: 0.05rem;
+  cursor: url("/assets/pointer.png"), pointer;
+}
+@media screen and (min-width: 700px) {
+  #Home .HomeLinks .HomeLink {
+    font-size: 3.1rem;
+    gap: 2.5rem;
+  }
+}
+@media screen and (min-width: 1030px) {
+  #Home .HomeLinks .HomeLink {
+    font-size: 2.6rem;
+  }
+}
+#Home .HomeLinks .HomeLink::after {
+  content: "";
+  background-image: url("/assets/link.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 2rem;
+  height: 2rem;
+}
+@media screen and (min-width: 700px) {
+  #Home .HomeLinks .HomeLink::after {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+@media screen and (min-width: 1030px) {
+  #Home .HomeLinks .HomeLink::after {
+    width: 2.6rem;
+    height: 2.6rem;
+  }
+}
+
+#Budget {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  background-color: #f6f6f6;
+}
+
+#Parallax {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6f6f6;
+}
+#Parallax .ParallaxText {
+  font-size: 2.6rem;
+  padding: 2.2rem;
+  border-radius: 1.5rem;
+  background-color: rgba(220, 220, 220, 0.5);
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,10 @@
+#Budget {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  background-color: $background;
+}
