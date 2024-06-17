@@ -33,6 +33,15 @@ html {
   background-color: #dcdcdc;
   border-radius: 50%;
   cursor: url("/assets/pointer.png"), pointer;
+  z-index: 9999;
+}
+@media screen and (min-width: 1030px) {
+  #Back {
+    bottom: 6rem;
+    right: 6rem;
+    width: 7rem;
+    height: 7rem;
+  }
 }
 #Back::after {
   content: "";
@@ -42,6 +51,12 @@ html {
   background-position: center;
   width: 2rem;
   height: 2rem;
+}
+@media screen and (min-width: 1030px) {
+  #Back::after {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
 }
 
 #Switch {
@@ -191,17 +206,50 @@ html {
 
 #Parallax {
   width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f6f6f6;
+  overflow: hidden;
+  height: 300rem;
 }
 #Parallax .ParallaxText {
-  font-size: 2.6rem;
-  padding: 2.2rem;
-  border-radius: 1.5rem;
-  background-color: rgba(220, 220, 220, 0.5);
+  color: #ffffff;
+  font-size: 1rem;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  z-index: 7;
+}
+#Parallax .ParallaxWindow {
+  background-image: url("/assets/parallax/mobile_w.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+@media screen and (min-width: 1030px) {
+  #Parallax .ParallaxWindow {
+    background-image: url("/assets/parallax/desktop_w.png");
+  }
+}
+#Parallax .ParallaxBackground {
+  background-image: url("/assets/parallax/mobile_b.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+@media screen and (min-width: 1030px) {
+  #Parallax .ParallaxBackground {
+    background-image: url("/assets/parallax/desktop_b.png");
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

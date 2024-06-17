@@ -10,6 +10,14 @@
   background-color: $grey;
   border-radius: 50%;
   cursor: $pointer, pointer;
+  z-index: 9999;
+
+  @include responsive(lg) {
+    bottom: 6rem;
+    right: 6rem;
+    width: 7rem;
+    height: 7rem;
+  }
 
   &::after {
     content: '';
@@ -19,5 +27,10 @@
     background-position: center;
     width: 2rem;
     height: 2rem;
+
+    @include responsive(lg) {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
   }
 }

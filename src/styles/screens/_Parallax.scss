@@ -1,15 +1,48 @@
 #Parallax {
   width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: $background;
+  overflow: hidden;
+  height: 300rem;
 
   .ParallaxText {
-    font-size: 2.6rem;
-    padding: 2.2rem;
-    border-radius: 1.5rem;
-    background-color: rgba($grey, 0.5);
+    color: $white;
+    font-size: 1rem;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 7;
+  }
+
+  .ParallaxWindow {
+    background-image: url('/assets/parallax/mobile_w.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+    @include responsive(lg) {
+      background-image: url('/assets/parallax/desktop_w.png');
+    }
+  }
+
+  .ParallaxBackground {
+    background-image: url('/assets/parallax/mobile_b.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    @include responsive(lg) {
+      background-image: url('/assets/parallax/desktop_b.png');
+    }
   }
 }
