@@ -208,6 +208,7 @@ html {
   width: 100vw;
   overflow: hidden;
   height: 300rem;
+  position: relative;
 }
 #Parallax .ParallaxText {
   color: #ffffff;
@@ -237,9 +238,8 @@ html {
 #Parallax .ParallaxBackground {
   background-image: url("/assets/parallax/mobile_b.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background-size: contain;
+  background-position: top left;
   width: 100vw;
   height: 100vh;
   position: fixed;
