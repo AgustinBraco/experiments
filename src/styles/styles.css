@@ -238,7 +238,7 @@ html {
 #Parallax .ParallaxBackground {
   background-image: url("/assets/parallax/mobile_b.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: top left;
   width: 100vw;
   height: 100vh;
