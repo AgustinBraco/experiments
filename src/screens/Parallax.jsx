@@ -5,7 +5,7 @@ export const Parallax = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scale = 1 + window.scrollY / 500;
-      const move = scale * 7;
+      const move = scale * 6.5;
 
       const background = document.getElementById('Window').style;
       const text = document.querySelector('.ParallaxText').style;
