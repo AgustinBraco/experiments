@@ -5,12 +5,17 @@
   position: relative;
 
   .ParallaxText {
-    color: $white;
+    color: $grey;
     font-size: 1rem;
     position: fixed;
     top: 0%;
     left: 0%;
     z-index: 7;
+
+    @include responsive(lg) {
+      transform: scale(1.5);
+      color: $font;
+    }
   }
 
   .ParallaxWindow {

@@ -211,12 +211,18 @@ html {
   position: relative;
 }
 #Parallax .ParallaxText {
-  color: #ffffff;
+  color: #dcdcdc;
   font-size: 1rem;
   position: fixed;
   top: 0%;
   left: 0%;
   z-index: 7;
+}
+@media screen and (min-width: 1030px) {
+  #Parallax .ParallaxText {
+    transform: scale(1.5);
+    color: #242422;
+  }
 }
 #Parallax .ParallaxWindow {
   background-image: url("/assets/parallax/mobile_w.png");
